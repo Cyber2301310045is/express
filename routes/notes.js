@@ -10,6 +10,7 @@ const client = new MongoClient(uri);
 
 router.get('/', async (req, res) => {
 // データベース、コレクションを指定
+console.log("Hello World!");
 const database = client.db('notes');
 const notes = database.collection('notes');
 
